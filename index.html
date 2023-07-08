@@ -64,7 +64,151 @@
 			</div>
 		</div>
 	</header>
-	<main></main>
+	<main>
+		<div class="wrapper">
+			<div class="preview-cv__wrapper">
+				<div class="preview-cv__avatar">
+					<a href="https://github.com/Volodya13" class="preview-cv__avatar-link">
+						<img src="https://avatars.githubusercontent.com/u/106335193?v=4" alt="Maslenkov Vladimir foto">
+					</a>
+				</div>
+				<div class="preview-cv__frame">
+					<div class="preview-cv__frame-list">
+						<div class="frame-list__item" id="contacts">
+							<h2 class="title">Contacts</h2>
+							<ul class="contacts__list">
+								<li class="contacts__list-item">
+									<a href=""><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;&nbsp; Location: Almaty, Kazakhstan</a>
+								</li>
+								<li class="contacts__list-item">
+									<a href="mailto:maslenkov.vladimir@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp; E-Mail: maslenkov.vladimir@gmail.com</a>
+								</li>
+								<li class="contacts__list-item">
+									<a href="phone:77474039265"><i class="fa-sharp fa-solid fa-phone"></i>&nbsp; Phone Number: +7 (747) 403-92-65</a>
+								</li>
+								<li class="contacts__list-item">
+									<a href="#980851015605698610"><i class="fa-brands fa-discord"></i>&nbsp;Discord: Volodya13.volodya13</a>
+								</li>
+								<li class="contacts__list-item">
+									<a href="#"><i class="fa-brands fa-github"></i>&nbsp; GitHub:__ @Volodya13</a>
+								</li>
+							</ul>
+						</div>
+						<div class="frame-list__item" id="about-me">
+							<h2 class="title">About me</h2>
+							<p>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hello everyone! My name's Vladimir Maslenkov and I'm 38. I've been working as a screen-printer for the last 8 years and now I' working on junior position in at the local web studio. Also I am continue my self-study to improve my skills. Because I'm going to get advanced level for this. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I live in Kazakhstan, Almaty city. I'm taking several courses such as "RSSchool Frontend Dev." and "Udemy: WEB-Dev" to become a front-end developer.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'd like to work to create something unusual. And I really sure that I'll have been reached for my aim definitly.
+							</p>
+						</div>
+						<div class="frame-list__item" id="skills">
+							<h2 class="title">Skills</h2>
+							<div class="skills-wrapper">
+								<h4 class="subtitle">Soft Skills:</h4>
+								<ul class="list">
+									<li>Sociability</li>
+									<li>Creativity</li>
+									<li>Perseverance</li>
+									<li>Team Work</li>
+									<li>Time Management</li>
+									<li>Optimization of workflow</li>
+								</ul>
+								<h4 class="subtitle">Hard Skills:</h4>
+								<ul class="list">
+									<li>HTML5</li>
+									<li>CSS3 / Sass / Scss / Stylus</li>
+									<li>Bootstrap</li>
+									<li>Java Script</li>
+									<li>JQuery (Basicly)</li>
+									<li>Git / GitHUB</li>
+									<li>Figma</li>
+									<li>CorelDRAW</li>
+									<li>Adobe Photoshop / Illustrator</li>
+									<li>BEM (Basicly)</li>
+									<li>React (Basicly)</li>
+									<li>GULP (Basicly)</li>
+									<li>WEB-pack (Basicly)</li>
+								</ul>
+							</div>
+						</div>
+						<div class="frame-list__item" id="education">
+							<h2 class="title">
+								Education
+							</h2>
+							<ul class="list">
+								<li>Accounting a finance (unfinished college)</li>
+								<li>RSSchool Front-end Dev. (in progress)</li>
+								<li>"Udemy: WEB-Dev" by Ivan Petrychenko</li>
+								<li>"Udemy: JavaScript + React" by Ivan Petrychenko</li>
+							</ul>
+						</div>
+						<div class="frame-list__item" id="expirience">
+							<h2 class="title">Expirience</h2>
+							<div class="expirience__wrapper">
+								<h4 class="subtitle">Task projects</h4>
+								<ul class="list">
+									<li>
+										<a href="https://Volodya13.github.io/rsschool-cv/">CV</a>
+									</li>
+									<li>
+										<a href="https://github.com/Volodya13/pulse-task_project/tree/gh-pages">pulse-task_project (uncompleted)</a>
+									</li>
+									<li>
+										<a href="https://github.com/Volodya13/employees">employees app on CRA (created react application)</a>
+									</li>
+								</ul>
+								<h4 class="subtitle">Career</h4>
+								<ul class="list">
+									<li>
+										<a href="https://ctdkz.tmweb.ru/">In progress project on my actualy job</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="frame-list__item" id="code-example">
+							<h2 class="title">Code Example</h2>
+							Create a function that accepts an integer number of minutes and returns the time in the desired string format.
+							<pre>
+								<code>
+									function getTimeFromMinutes(minutes) {
+										let hours = Math.floor(minutes / 60),
+											min = minutes % 60,
+											hoursStr = '';
+										switch (hours) {
+											case 0: 
+												hoursStr = 'часов';
+												break;
+											case 1:
+												hoursStr = 'час';
+												break;
+											case 2:
+											case 3:
+											case 4:
+												hoursStr = 'часа';
+												break;
+											default:
+												hoursStr = 'часов';
+										}
+										let result = typeof(minutes) !== 'number' || minutes < 0 || !Number.isInteger(minutes) ? "Ошибка, проверьте данные" : `Это ${hours} ${hoursStr} и ${min} минут`;
+										return result;
+									}
+									getTimeFromMinutes();
+								</code>
+							</pre>
+						</div>
+						<div class="frame-list__item" id="languages">
+							<h2 class="title">Languages</h2>
+							<ul class="list">
+								<li>English: A2 (Pre-Intermediate)</li>
+								<li>Russian: Native</li>
+								<li>Kyrgiz: Elementary</li>
+								<li>Kazakh: Beginer</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 	<footer></footer>
 	<script src="https://kit.fontawesome.com/f401070d9c.js" crossorigin="anonymous"></script>
 </body>
