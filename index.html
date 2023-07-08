@@ -166,42 +166,34 @@
 						</div>
 						<div class="frame-list__item" id="code-example">
 							<h2 class="title">Code Example</h2>
-							Create a function that accepts an integer number of minutes and returns the time in the desired string format.
-							<pre>
-								<code>
-									function getTimeFromMinutes(minutes) {
-										let hours = Math.floor(minutes / 60),
-											min = minutes % 60,
-											hoursStr = '';
-										switch (hours) {
-											case 0: 
-												hoursStr = 'часов';
-												break;
-											case 1:
-												hoursStr = 'час';
-												break;
-											case 2:
-											case 3:
-											case 4:
-												hoursStr = 'часа';
-												break;
-											default:
-												hoursStr = 'часов';
+							<!-- Create a function that accepts an integer number of minutes and returns the time in the desired string format. -->
+							<div class="code-example__wrapper">
+								<pre>
+									<code>
+										const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+	
+										function showFamily(arr) {
+										   let str = '';
+											arr.length === 0 ? str = 'Семья пуста': str = 'Семья состоит из:';
+											arr.forEach(person => {str += ` ${person}`})
+											return str;
 										}
-										let result = typeof(minutes) !== 'number' || minutes < 0 || !Number.isInteger(minutes) ? "Ошибка, проверьте данные" : `Это ${hours} ${hoursStr} и ${min} минут`;
-										return result;
-									}
-									getTimeFromMinutes();
-								</code>
-							</pre>
+										showFamily(family);
+									</code>
+								</pre>
+							</div>
 						</div>
 						<div class="frame-list__item" id="languages">
 							<h2 class="title">Languages</h2>
 							<ul class="list">
-								<li>English: A2 (Pre-Intermediate)</li>
-								<li>Russian: Native</li>
-								<li>Kyrgiz: Elementary</li>
-								<li>Kazakh: Beginer</li>
+								<li>
+									<img src="img/icons/" alt="">English: A2 (Pre-Intermediate)</li>
+								<li>
+									<img src="img/icons/" alt="">Russian: Native</li>
+								<li>
+									<img src="img/icons/" alt="">Kyrgiz: Elementary</li>
+								<li>
+									<img src="img/icons/" alt="">Kazakh: Beginer</li>
 							</ul>
 						</div>
 					</div>

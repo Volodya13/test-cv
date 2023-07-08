@@ -262,3 +262,34 @@ header{
     transition: all .5s;
 
 }
+#code-example {
+    display: none;
+}
+.code-example__wrapper {
+    width: 650px;
+    height: 250px;
+    position: relative;
+}
+.code-example__wrapper pre {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+.code-example__wrapper pre code {
+    display: block;
+    position: absolute;
+    width: 100%;
+    transform: translateX(-100%);
+}
+/* #code-example pre {
+    width: 85%;
+    height: 100%;
+}
+#code-example pre code {
+    display: flex;
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+} */
