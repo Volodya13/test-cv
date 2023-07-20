@@ -1,0 +1,298 @@
+/* basicly default styles */
+html {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #99999993;
+    scroll-behavior: smooth;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: #3c3939;
+}
+img {
+    display: block;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* header styles */
+header{
+    background-color: #333;
+}
+.header-cv__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+    gap: 182px;
+    position: relative;
+    max-height: 50px;
+}
+.header-cv__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-cv__logo .header-cv__logo-link svg {
+    width: 35px;
+    height: 35px;
+}
+.header-cv__logo .header-cv__logo-link{
+    transition: all .4s;
+}
+.header-cv__logo .header-cv__logo-link:hover {
+    transform: rotate(360deg);
+    scale: 0.8;
+}
+.header-cv__wrapper .header-cv__navbar {
+    width: 100%;
+}
+.header-cv__wrapper .header-cv__navbar .header-cv__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu__list-item {
+    position: relative; 
+    transition: all .4s; 
+}
+.menu__list-item:hover {
+    transform: scale(.8);
+}
+.menu__list-item .menu__link {
+    font-size: 18px;
+    color:aliceblue;
+}
+/* main styles */
+.preview-cv__wrapper {
+    padding: 30px 0;
+    position: relative;
+    display: flex;
+    gap: 50px;
+}
+.preview-cv__wrapper .preview-cv__avatar {
+    width: 200px;
+    height: 350px;
+}
+.preview-cv__wrapper .preview-cv__avatar .preview-cv__avatar-link{
+    transition: all .4s;
+    position: relative;
+}
+.preview-cv__wrapper .preview-cv__avatar .preview-cv__avatar-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.preview-cv__avatar .preview-cv__name {
+    font-weight: 700;
+    font-size: 32px;
+}
+.preview-cv__avatar .preview-cv__title {
+    font-size: 18px;
+
+}
+.preview-cv__wrapper .preview-cv__frame {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(245, 241, 236, 0.76);
+    border-radius: 10px;
+}
+.preview-cv__wrapper .prev, .next {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 50%;
+    cursor: pointer;
+    left: 20%;
+    opacity: .4;
+    transition: all .3s;
+    z-index: 5555;
+}
+.preview-cv__wrapper .prev:hover, .next:hover {
+    scale: 1.1;
+    opacity: 1;
+}
+.preview-cv__wrapper  .next {
+    left: 95%;
+}
+.preview-cv__frame .preview-cv__frame-list{
+    position: absolute;
+    display: flex;
+    /* flex-direction: column; */
+    /* padding-left: 15%; */
+    transition: all .4s ease-in-out;
+}
+.preview-cv__frame .preview-cv__frame-list .frame-list__item {
+    height: 350px;
+    /* width: 855px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2%;
+}
+.title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.list, .contacts__list li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(27, 27, 27, .7);
+    transition: all .3s;
+}
+.list, .contacts__list li a:hover{
+    /* scale: 1.1; */
+    color: rgba(27, 27, 27, 1);
+}
+.contacts__list .contacts__list-item:not(:first-child) {
+    margin-top: 10px;
+}
+.contacts {
+    position: relative;
+    align-items: flex-start;
+}
+.about-me p {
+    max-width: 75%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 130%;
+
+}
+.skills .skills-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: baseline;
+    gap: 3%;
+    /* padding-left: 70px; */
+}
+.skills-wrapper ul.list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 150px;
+}
+.skills .list li {
+    max-width: 175px;
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(27, 27, 27, 1);
+}
+.skills .list li:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    transform: translate(-9px, 100%) rotate(45deg);
+    background-color: #333;
+}
+.education .list {
+    padding-left: 15px;
+}
+.education .list li {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 7px 0;
+}
+.education .list li:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    /* border-radius: 100%; */
+    transform: translate(-11px, 7px) rotate(45deg);
+    background-color: #333;
+}
+.expirience .expirience__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 85%;
+}
+.expirience__wrapper .subtitle {
+    width: 100%;
+}
+.expirience__wrapper .list li {
+    padding: 0 35px;
+
+}
+.expirience__wrapper .list li:hover {
+    background-color: #fff;
+    border-radius: 5px;
+    scale: 1.1;
+}
+.expirience__wrapper .list li:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    transform: translate(-11px, 7px) rotate(45deg);
+    background-color: #333;
+}
+.expirience__wrapper .list li a{
+    font-size: 16px;
+    font-weight: normal;
+    transition: all .5s;
+}
+.code-example__wrapper pre {
+    margin-right: -60%;
+}
+.languages .list li {
+    display: flex;
+    gap: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.languages .list li > img {
+    opacity: .6;
+}
+/* footer styles */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+}
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__wrapper .footer__item {
+    font-size: 18px;
+    color:aliceblue
+}
+.footer__wrapper .footer__item.rschool-course-link {
+    width: 115px;
+    height: 40px;
+}
+.footer__wrapper .footer__item.github {
+    width: 50px;
+    height: 50px;
+}
+.footer__wrapper .footer__item.github img {
+    width: 100%;
+    height: auto;
+}
