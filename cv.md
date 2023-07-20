@@ -8,7 +8,14 @@
 * __GitHub:__ @Volodya13
 ---
 ## ABOUT ME
-Hello everyone! My name's Vladimir Maslenkov and I'm 38. I've been      working as a screen-printer for the last 8 years and now I' working on junior position in at the local web studio. Also I am continue my self-study to improve my skills. Because I'm going to get advanced level for this. I live in Kazakhstan, Almaty city. I'm taking several courses such as "RSSchool Frontend Dev." and "Udemy: WEB-Dev" to become a front-end developer. I'd like to work to create something unusual. And I really sure that I'll have been reached for my aim definitly.
+```
+Hello everyone! My name's Vladimir Maslenkov and I'm 38. 
+I've been working as a screen-printer for the last 8 years and now I' working on junior position at 
+the local web studio. Also I am continue my self-study to improve my skills. Because I'm going to get 
+advanced level for this. I live in Kazakhstan, Almaty city. I'm taking several courses such as 
+"RSSchool Frontend Dev." and "Udemy: WEB-Dev" to become a front-end developer. I'd like to work to 
+create something unusual. And I really sure that I'll have been reached for my aim definitly.
+```
 ---
 ## MY EDUCATION
 * Accounting a finance (unfinished college)
