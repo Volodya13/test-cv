@@ -14,7 +14,7 @@ body {
 a {
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #3c3939;
 }
 img {
     display: block;
@@ -77,6 +77,7 @@ header{
 }
 .menu__list-item .menu__link {
     font-size: 18px;
+    color:aliceblue;
 }
 /* main styles */
 .preview-cv__wrapper {
@@ -241,6 +242,7 @@ header{
 .expirience__wrapper .list li:hover {
     background-color: #fff;
     border-radius: 5px;
+    scale: 1.1;
 }
 .expirience__wrapper .list li:before {
     content: '';
@@ -254,12 +256,10 @@ header{
 .expirience__wrapper .list li a{
     font-size: 16px;
     font-weight: normal;
-    color: #333;
     transition: all .5s;
-
 }
 .code-example__wrapper pre {
-margin-right: -60%;
+    margin-right: -60%;
 }
 .languages .list li {
     display: flex;
